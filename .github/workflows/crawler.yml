@@ -98,7 +98,7 @@ jobs:
           
           echo "⬆️ Pushing changes with retry..."
           for i in {1..5}; do
-            git pull --rebase origin main && git push origin main && {
+            git pull --rebase origin master && git push origin master && {
               echo "✅ Successfully pushed on attempt $i"
               exit 0
             }
